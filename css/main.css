@@ -1,0 +1,134 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+#container {
+    width: 100%;
+    margin: auto;
+}
+
+body {
+    background-image: url(../img/flower.jpg);
+    background-repeat: repeat;
+    background-size: contain, cover;
+}
+
+section {
+    background-color: #1f2d38;
+    width: 80%;
+    margin: auto;
+    padding: 2%;
+}
+
+header {
+    background-color: #db665e;
+    width: 100%;
+    margin-bottom: 3%;
+}
+
+header img, header h1 {
+    padding-left: 2%;
+}
+
+header p {
+    text-align: right;
+    margin-right: 30%;
+    background-color: #c84645;
+    width: 98%;
+    padding: 1%;
+    font-size: 0.9em;
+}
+
+h1 {
+    font-family: 'Droid Sans';
+    font-size: 1.1em;
+    color: white;
+}
+
+h2 {
+    font-family: 'Droid Sans';
+    font-size: 1.3em;
+    color: #ff9e89;
+    text-align: center;
+    padding: 2%;
+}
+
+h3 {
+    font-family: 'Oswald';
+    font-size: 1.1em;
+    color: white;
+}
+
+h4 {
+    font-family: 'Quicksand';
+    font-size: 1.1em;
+    color: #659e69;
+    padding-bottom: 1.5%;
+}
+
+h5 {
+    font-family: 'Droid Sans';
+    font-size: 0.9em;
+    color: grey;
+    padding-top: 1%;
+    padding-bottom: 3%;
+}
+
+p {
+    font-family: 'Droid Sans';
+    color: white;
+    padding-bottom: 2%;
+}
+
+article {
+    width: 80%;
+    margin: auto;
+    margin-top: 4%;
+}
+
+#services {
+    border: 2px;
+    border-color: #d4ad5a;
+    border-style: solid;
+    padding: 2%;
+}
+
+#services ul li {
+    list-style-type: none;
+}
+
+.price {
+    font-family: 'Oswald';
+}
+
+#products {
+    width: 76%;
+    background-image: url('../img/watercolor.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-color: white;
+    border-width: 12px;
+    border-style: solid;
+    padding: 2%;
+    text-align: center;
+    list-style-position: inside;
+}
+
+#products ul li {
+    font-family: 'Quicksand';
+    color: #659e69;
+    font-weight: bold;
+}
+
+#products p {
+    color: #1f2d38;
+}
+
+footer {
+    margin: auto;
+    text-align: center;
+    padding: 2%;
+}

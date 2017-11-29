@@ -2,46 +2,51 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>Project Final 3 - Blooms</title>
+    <title>Project Final 3 - Michelle Champalanne</title>
     <meta name="description" content="">
 
     <link rel="stylesheet" href="css/vendor/normalize.min.css">
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="fullcalendar/fullcalendar.css" />
+	<link rel="stylesheet" href="unitegallery/css/unite-gallery.css" />
+	<link rel="stylesheet" href="unitegallery/themes/default/ug-theme-default.css"/>
+
+    <link href="https://fonts.googleapis.com/css?family=Droid+Sans|Oswald|Quicksand" rel="stylesheet">
 </head>
-<body>
+<body id="container">
     <header>
+        <img src="img/logo.png" alt="logo" title="logo">
         <h1>Flower Shop</h1>
-        <img>
-        <p>Phone: 123-456-7890</p>
-        <p>Hours: M-F 9:00AM - 4:00PM</p>
+        <p class="contact">Phone: (123)-456-7890</p>
+        <p class="contact">Hours: M - F 9 - 4</p>
     </header>
     <section>
         <article>
-            <h2>Welcome!</h2>
-            <p>Text text text text text text text</p>
+            <h2>WELCOME!</h2>
+            <p>Blooms Flower Shop proudly serves the Vero Beach area. We are family owned and operated since 1940. We are committed to offering only the finest flower arrangements, delivered with service that is both friendly and fast. Every single one of our customers is our most important customer, so we are dedicated to ensuring your experience with Blooms Flower Shop is a pleasant one. We will always go the extra step to make your floral arrangement perfect.</p>
         </article>
-        <article>
-            <h2>Services</h2>
+        <article id="services">
+            <h2>SERVICES</h2>
             <ul>
-                <li>Weddings</li>
+                <li><h4>Weddings</h4></li>
                     <p>Garnish your wedding celebration with the most gorgeous flower decorations and bouquets.</p>
-                    <p>Price: $2,000+</p>
-                <li>Parties</li>
+                    <p class="price">Price: $2,000+</p>
+                <li><h4>Parties</h4></li>
                     <p>Decorate any party with a variety of flower options for your choice!</p>
-                    <p>Price: Starting at $100</p>
-                <li>Birthdays</li>
+                    <p class="price">Price: Starting at $100</p>
+                <li><h4>Birthdays</h4></li>
                     <p>No birthday is complete without a few beautiful flower arrangements, or even a floral gift.</p>
-                    <p>Price: Starting at $60</p>
-                <li>Graduation</li>
+                    <p class="price">Price: Starting at $60</p>
+                <li><h4>Graduation</h4></li>
                     <p>Congratulate your loved one with a custom floral arrangement handmade by our experts.</p>
-                    <p>Price: Starting at $40</p>
-                <li>Special Occassions</li>
+                    <p class="price">Price: Starting at $40</p>
+                <li><h4>Special Occassions</h4></li>
                     <p>Beautiful flowers complement any special occassion and we will work with you to make sure you are satisfied!</p>
-                    <p>Price: Starting at $30</p>
+                    <p class="price">Price: Starting at $30</p>
             </ul>
         </article>
-        <article>
-            <h2>Products</h2>
+        <article id="products">
+            <h2>PRODUCTS</h2>
                 <ul><p>We carry flowers such as:</p>
                     <li>Roses</li>
                     <li>Orchids</li>
@@ -52,29 +57,56 @@
                     <li>Sunflowers</li>
                     <li>Daisies</li>
                     <li>Hydrangeas</li>
-                    <li>Pointsettas</li>
+                    <li>Poinsettias</li>
                 </ul>
             <p></p>
             <p></p>
         </article>
         <article>
-            <h2>Location</h2>
-            <!---INSERT GOOGLE MAPS --->
+            <div id="gallery" style="display:none;">
+    			<img alt="Image 1 Title" src="../img/flower.jpg"
+    				data-image="../img/flower.jpg"
+    				data-description="Image 1 Description">
+
+    			<img alt="Image 2 Title" src="img/flower.jpg"
+    				data-image="img/flower.jpg"
+    				data-description="Image 2 Description">
+		</div>
+        </article>
+        <article>
+            <h2>LOCATION</h2>
+            <!--- GOOGLE MAPS --->
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30151.40560236239!2d-80.48776072691143!3d27.817765280718728!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88de6846ba3366ad%3A0xe89e4048220812d2!2s123+Main+St%2C+Sebastian%2C+FL+32958!5e0!3m2!1sen!2sus!4v1511912888265" width="80%" height="70%" frameborder="0" style="border:0" allowfullscreen></iframe>
             <p>123 Main Street</p>
             <p>Sunnyville, Florida, 32969</p>
         </article>
         <article>
-            <h2>Upcoming Events</h2>
-            <p></p>
+            <h2>UPCOMING EVENTS</h2>
+            <p><div id='calendar'></div></p>
         </article>
         <article>
-            <h2>Newly Arrived</h2>
-            <img>
+            <h2>NEW ARRIVALS</h2>
+            <img src="img/poinsettias.png" alt="poinsettias" title="poinsettias">
             <p>Just in time for the holidays! We are taking orders for pointsettas. These gorgeous flowers will complete any home's holiday decorations. Please call to inquire about placing an order.</p>
         </article>
         <article>
             <h2>Order now!</h2>
-            <p></p>
+            <p>
+                <form id="form" action="json/request.json">
+                  <div class="form-group">
+                    <label for="inputName">Name</label>
+                    <input type="text" class="form-control" id="inputName" name="name">
+                  </div>
+                  <div class="form-group">
+                    <label for="inputEmail">Email</label>
+                    <input type="email" class="form-control" id="inputEmail" name="email">
+                  </div>
+                  <div class="form-group">
+                    <label for="inputComment">Comment</label>
+                    <textarea class="form-control" id="inputComment" name="comment" rows="6"></textarea>
+                  </div>
+                  <button type="submit" class="btn btn-primary">Submit</button>
+                </form></p>
         </article>
     </section>
     <footer>
@@ -82,7 +114,12 @@
         <p>email@gmail.com</p>
         <p>123 Main Street, Sunnyville, FL</p>
     </footer>
-
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="unitegallery/js/unitegallery.min.js"></script>
+    <script src="unitegallery/themes/default/ug-theme-default.js"></script>
+    <script src="js/submitter.js"></script>
+    <script src="js/moment.min.js"></script>
+    <script src="js/fullcalendar.js"></script>
     <script src="js/main.js"></script>
 </body>
 </html>
