@@ -15,13 +15,6 @@ body {
     background-size: contain, cover;
 }
 
-section {
-    background-color: #1f2d38;
-    width: 80%;
-    margin: auto;
-    padding: 2%;
-}
-
 header {
     background-color: #db665e;
     width: 100%;
@@ -41,6 +34,17 @@ header p {
     font-size: 0.9em;
 }
 
+#social {
+    text-align: left;
+    padding: 0;
+}
+
+#social img {
+    float: left;
+    max-width: 150px;
+    padding: 0;
+}
+
 h1 {
     font-family: 'Droid Sans';
     font-size: 1.1em;
@@ -53,6 +57,7 @@ h2 {
     color: #ff9e89;
     text-align: center;
     padding: 2%;
+    margin: auto;
 }
 
 h3 {
@@ -68,14 +73,6 @@ h4 {
     padding-bottom: 1.5%;
 }
 
-h5 {
-    font-family: 'Droid Sans';
-    font-size: 0.9em;
-    color: grey;
-    padding-top: 1%;
-    padding-bottom: 3%;
-}
-
 p {
     font-family: 'Droid Sans';
     color: white;
@@ -84,8 +81,31 @@ p {
 
 article {
     width: 80%;
+    padding: 2%;
     margin: auto;
-    margin-top: 4%;
+    text-align: center;
+    background-color: #1f2d38;
+}
+
+#leaves1, #leaves2 {
+    max-width: 12%;
+    padding: 2%;
+    margin-top: 3%;
+}
+
+#leaves1 {
+    float: left;
+    clear: both;
+}
+
+#leaves2 {
+    float: right;
+}
+
+#welcome {
+    margin: auto;
+    text-align: center;
+    max-width: 70%;
 }
 
 #services {
@@ -93,10 +113,20 @@ article {
     border-color: #d4ad5a;
     border-style: solid;
     padding: 2%;
+    clear: both;
+    text-align: center;
+}
+
+#services p {
+    padding: 2%;
 }
 
 #services ul li {
     list-style-type: none;
+}
+
+#services img {
+    max-width: 300px;
 }
 
 .price {
@@ -104,7 +134,7 @@ article {
 }
 
 #products {
-    width: 76%;
+    max-width: 75%;
     background-image: url('../img/watercolor.png');
     background-size: cover;
     background-repeat: no-repeat;
@@ -127,8 +157,70 @@ article {
     color: #1f2d38;
 }
 
+.flowers img {
+    max-width: 100px;
+    margin-top: 2%;
+    display: inline-block;
+}
+
+#events img {
+    max-width: 100px;
+}
+
+#newarrivals {
+    margin: auto;
+    text-align: center;
+    padding: 2%;
+}
+
+#newarrivals img {
+    max-width: 200px;
+}
+
 footer {
     margin: auto;
     text-align: center;
     padding: 2%;
+}
+
+@media (min-width: 800px) {
+
+    #welcomebox {
+        float: left;
+        width: 50%;
+        margin: 2%;
+        margin-top: 0%;
+        padding: 1%;
+    }
+
+    #services {
+        float: left;
+        width: 50%;
+        margin: 2%;
+        margin-top: 0%;
+        padding: 1%;
+    }
+
+    #location {
+        background-color: #c84645;
+        margin-top: 2%;
+        padding: 3%;
+    }
+
+    #products,
+    #location {
+        width: 30%;
+        margin-left: 58%;
+    }
+
+    #events {
+        margin-bottom: 2%;
+        clear: both;
+    }
+
+    #order {
+        background-color: white;
+        margin-top: 2%;
+    }
+
 }
