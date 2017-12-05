@@ -7,10 +7,7 @@
 
     <link rel="stylesheet" href="css/vendor/normalize.min.css">
     <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="fullcalendar/fullcalendar.css" />
-	<link rel="stylesheet" href="unitegallery/css/unite-gallery.css" />
-	<link rel="stylesheet" href="unitegallery/themes/default/ug-theme-default.css"/>
-
+    <link href="css/jquery-sakura.css" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Droid+Sans|Oswald|Quicksand" rel="stylesheet">
 </head>
 <body id="container">
@@ -22,7 +19,7 @@
         <p>Hours: M - F 9 - 4</p>
     </header>
         <article id="welcomebox">
-            <h2>WELCOME!</h2>
+            <h2 class="welcometext">WELCOME!</h2>
             <img id="leaves1" src="img/leaves.png" alt="leaves" title="leaves">
             <img id="leaves2" src="img/leaves2.png" alt="leaves" title="leaves">
             <p id="welcome">Blooms Flower Shop proudly serves the Vero Beach area. We are family owned and operated since 1940. We are committed to offering only the finest flower arrangements, delivered with service that is both friendly and fast. Every single one of our customers is our most important customer, so we are dedicated to ensuring your experience with Blooms Flower Shop is a pleasant one. We will always go the extra step to make your floral arrangement perfect.</p>
@@ -77,6 +74,12 @@
         </article>
         <article id="events">
             <h2>UPCOMING EVENTS</h2>
+            <h4>Christmas - December 25</h4>
+            <p>Place orders by 12/15</p>
+            <h4>New Years - January 1</h4>
+            <p>Place orders by 12/27</p>
+            <h4>Valentine's Day - February 14</h4>
+            <p>Place orders by 1/30</p>
             <img src="img/flowers.png" alt="flowers" title="flowers">
         </article>
         <article id="newarrivals">
@@ -88,19 +91,24 @@
             <img src="img/star.jpg" alt="Star of Bethlehem" title="Star of Bethlehem">
             <p>Give the perfect gift of the holidays with these limited-edition, sweet-smelling gorgeous flowers that anyone will enjoy.</p>
         </article>
+        <article>
+            <div id="iFeatures">
+					    <div class="ticker">
+					      <li><p>Find us now every Saturday at the Beachside Farmers Market.</p></li>
+					      <li><p>Recently added: Services for baby showers!</p></li>
+					      <li><p>Blooms Flower Shop won Press Journal's Best Flower Shop in 2016 for Vero Beach.</p></li>
+					    </div>
+					</div>
         <article id="order">
             <h2>Order now!</h2>
-            <p><img src="button"</p>
+            <p><img src="button"></p>
         </article>
     <footer>
         <p>Blooms Flower Shop / email@gmail.com / 123 Main Street, Sunnyville, FL</p>
     </footer>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-    <script src="unitegallery/js/unitegallery.min.js"></script>
-    <script src="unitegallery/themes/default/ug-theme-default.js"></script>
-    <script src="js/submitter.js"></script>
-    <script src="js/moment.min.js"></script>
-    <script src="js/fullcalendar.js"></script>
+    <script src="js/ticker.js"></script>
+    <script src="js/jquery-sakura.min.js"></script>
     <script src="js/main.js"></script>
 </body>
 </html>
