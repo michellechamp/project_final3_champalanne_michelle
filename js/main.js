@@ -16,3 +16,12 @@ $(function () {
 $(window).load(function () {
     $.fn.sakura();
 });
+
+//Custom Javascript code to change text of button in submit form
+var theSubmit = document.getElementById('submitbutton');
+
+theSubmit.addEventListener('click', function () {
+    var myElement = document.createElement('p');
+    myElement.innerHTML = 'Thank you for submitting a request. We will be in touch shortly';
+    theSubmit.replaceWith(myElement);
+});

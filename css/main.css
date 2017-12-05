@@ -178,10 +178,17 @@ article {
     max-width: 200px;
 }
 
-footer {
+#submitbutton {
+    background-color: #c84645;
+    padding: 2%;
+}
+
+footer,
+footer p {
     margin: auto;
     text-align: center;
     padding: 2%;
+    color: #659e69;
 }
 
 /********* HORIZONTAL TICKER ************/
