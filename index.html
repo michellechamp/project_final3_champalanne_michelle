@@ -103,52 +103,26 @@
         </article>
         <article id="order">
             <h2>Order now!</h2>
-            <form id="test_form" name="test_form" method="post" action="form.php" onsubmit="return validateForm(this)">
+            <form method="post">
                 <fieldset id="basic">
 					<legend id="basic"></legend>
-						<label class="label" for="name">Name:</label><br/>
-						    <input name="req_name" type="text" id="name" placeholder="First and last name" size="30" required/>
-                        <label class="label" for="email_address" id="email">Email:</label>
-						    <input name="email_address" type="email" id="email_address" size="30" placeholder="john@abc.com" required/>
+						<label class="label" for="name">Name:</label>
+						    <input type="text" id="name" placeholder="First and last name" size="30" required/>
                         <label class="label" for="phone_number">Phone:</label>
-							<input name="phone_number" type="tel" id="phone_number" size="30" placeholder="(888)-888-8888"/><br/>
-	                    <label class="label" for="website">Website:</label>
-							<input type="url" name="website" id="website_address" size="30" placeholder="http://www.website.com"/><br/>
-                        <label class="label" for="contactmethod">How would you prefer to be contacted?</label>
-							<select name="contactmethod" id="contactmethod">
-								<option value="phone">Phone</option>
-								<option value="email">Email</option>
+							<input type="tel" id="phone_number" size="30" placeholder="(888)-888-8888"/>
+	                    <label class="label" for="service">What type of service are you interested in?</label>
+							<select name="service" id="service">
+								<option value="wedding">Wedding</option>
+								<option value="birthday">Birthday</option>
+                                <option value="party">Party</option>
+                                <option value="graduation">Graduation</option>
+                                <option value="special">Special Occassion</option>
 						    </select>
+						<label class="label" for="comments">Estimate how many flowers.</label>
+						    <textarea name="comments" id="comments" placeholder="1"></textarea>
 				</fieldset>
-						<p class="label">Are you inquiring about my freelance work?</p>
-							<input type="radio" name="work" id="yes" value="yes">
-						<label class="inline" for="yes">Yes</label>
-								<input type="radio" name="work" id="no" value="no">
-						<label class="inline" for="no">No</label>
-				<fieldset>
-                	<legend id="free">If you are inquiring about freelance work, please select one or more of the following options:</legend>
-			            <input type="checkbox" name="freelance" value="Design" />
-			                <label class="inline">Design </label><br />
-			            <input type="checkbox" name="freelance" value="Social Media" id="socialmedia" />
-			                <label class="inline">Social Media</label><br />
-			            <input type="checkbox" name="freelance" value="Marketing" />
-			                <label class="inline">Marketing</label><br />
- 						<input type="checkbox" name="freelance" value="Journalism" />
- 							<label class="inline">Journalism</label><br />
-
-								<p>
-									<label class="label" for="comments">Tell me a little bit about yourself.</label>
-									<textarea name="comments" id="comments" placeholder="Are you in the South Florida area? I would love to get a cup of coffee with you! Let me know how you'd like to connect."></textarea>
-								</p>
-
-								<p>
-									<input type="submit" name="submit" value="Submit"/>
-									<input type="reset" name="reset" value="Reset"/>
-								</p>
-
-							</fieldset>
-						</form>
-            <p id="submitbutton">Submit</p>
+		    </form>
+            <input type="submit" name="submit" value="Submit" id="submitbutton" placeholder="Submit"/>
         </article>
     <footer>
         <p>Blooms Flower Shop / email@gmail.com / 123 Main Street, Sunnyville, FL</p>
