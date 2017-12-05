@@ -21,7 +21,8 @@ header {
     margin-bottom: 3%;
 }
 
-header img, header h1 {
+header img,
+header h1 {
     padding-left: 2%;
 }
 
@@ -88,7 +89,8 @@ article {
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
 }
 
-#leaves1, #leaves2 {
+#leaves1,
+#leaves2 {
     max-width: 12%;
     padding: 2%;
     margin-top: 3%;
@@ -178,9 +180,15 @@ article {
     max-width: 200px;
 }
 
-#submitbutton {
+#order {
+    background-color: white;
+}
+
+#submitbutton,
+#order p {
     background-color: #c84645;
     padding: 2%;
+    color: white;
 }
 
 footer,
@@ -189,6 +197,7 @@ footer p {
     text-align: center;
     padding: 2%;
     color: #659e69;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 1);
 }
 
 /********* HORIZONTAL TICKER ************/
@@ -236,14 +245,11 @@ footer p {
         margin-left: 58%;
     }
 
-    #events {
+    #events,
+    #ticker,
+    #order {
         margin-bottom: 2%;
         clear: both;
-    }
-
-    #order {
-        background-color: white;
-        margin-top: 2%;
     }
 
 }

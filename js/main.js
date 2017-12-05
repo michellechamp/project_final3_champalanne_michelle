@@ -12,7 +12,7 @@ $(function () {
     $.fn.sakura();
 });
 
-// windowLoad
+// windowLoad for falling petal jQuery plug in (required)
 $(window).load(function () {
     $.fn.sakura();
 });
@@ -24,4 +24,13 @@ theSubmit.addEventListener('click', function () {
     var myElement = document.createElement('p');
     myElement.innerHTML = 'Thank you for submitting a request. We will be in touch shortly';
     theSubmit.replaceWith(myElement);
+});
+
+//Custom jQuery to change background color of Events section when mouse goes over
+$('#events').mouseover(function () {
+    $('#events').css('background-color', '#d4ad5a');
+});
+
+$('#events').mouseout(function () {
+    $('#events').css('background-color', '#1f2d38');
 });
